@@ -1,104 +1,128 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conzumido</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="/images/perfil.png" />
+  </head>
+  <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#about">Acerca de mí</a></li>
-                <li><a href="#projects">Proyectos</a></li>
-                <li><a href="#technologies">Tecnologías</a></li>
-                <li><a href="#contact">Contacto</a></li>
-            </ul>
-        </nav>
-        <img src="/images/perfil.png" alt="Logo" class="header-logo">
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#about">Acerca de mí</a></li>
+          <li><a href="#projects">Proyectos</a></li>
+          <li><a href="#technologies">Tecnologías</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+        <button class="menu-toggle">☰</button>
+      </nav>
+      <img src="/images/perfil.png" alt="Logo" class="header-logo" />
     </header>
 
     <section id="about">
-        <h2>Acerca de mí</h2>
-        <div class="about-content">
-            <img src="/images/perfil.png" class="profile-photo">
-            <p>Hola, soy Diego Alejandro Garcia Deus. Me apasiona la tecnología y la creatividad.</p>
-        </div>
+      <h2>Acerca de mí</h2>
+      <div class="about-content">
+        <img src="/images/perfil.png" class="profile-photo" />
+        <p>
+          Hola, soy Diego Alejandro Garcia Deus. Me apasiona la tecnología y la
+          creatividad.
+        </p>
+      </div>
     </section>
 
     <section id="projects">
-        <h2>Mis Proyectos</h2>
-        <div class="project-list">
-            <div class="project-item">
-                <h3>Proyecto 1</h3>
-                <p>Descripción del proyecto 1.</p>
-            </div>
-            <div class="project-item">
-                <h3>Proyecto 2</h3>
-                <p>Descripción del proyecto 2.</p>
-            </div>
-            
+      <h2>Mis Proyectos</h2>
+      <div class="project-list">
+        <div class="project-item">
+          <img src="/images/perfil.png" alt="" />
+          <div class="project-text">
+            <h3>Proyecto 1</h3>
+            <p>Descripción del proyecto 1.</p>
+          </div>
         </div>
+        <div class="project-item">
+          <img src="/images/perfil.png" alt="" />
+          <div class="project-text">
+            <h3>Proyecto 1</h3>
+            <p>Descripción del proyecto 1.</p>
+          </div>
+        </div>
+        <div class="project-item">
+          <img src="/images/perfil.png" alt="" />
+          <div class="project-text">
+            <h3>Proyecto 1</h3>
+            <p>Descripción del proyecto 1.</p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section id="technologies">
-        <h2>Tecnologías que uso</h2>
-        <div class="technology-list">
-            <div class="technology-item">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/1200px-Angular_full_color_logo.svg.png" alt="Angular">
-                <p>Angular</p>
-            </div>
-            <div class="technology-item">
-                <img src="/images/html.svg" alt="HTML">
-                <p>HTML</p>
-            </div>
-            <div class="technology-item">
-                <img src="/images/css.svg" alt="CSS">
-                <p>CSS</p>
-            </div>
-            <div class="technology-item">
-                <img src="/images/javascript.svg" alt="JavaScript">
-                <p>JavaScript</p>
-            </div>
-            <div class="technology-item">
-                <img src="/images/typescript.svg" alt="TypeScript">
-                <p>TypeScript</p>
-            </div>
-            <div class="technology-item">
-                <img src="/images/java.svg" alt="Java">
-                <p>Java</p>
-            </div>
-            <div class="technology-item">
-                <img src="/images/spring.svg" alt="Spring">
-                <p>Spring</p>
-            </div>
+      <h2>Tecnologías que uso</h2>
+      <div class="technology-list">
+        <div class="technology-item">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/1200px-Angular_full_color_logo.svg.png"
+            alt="Angular"
+          />
+          <p>Angular</p>
         </div>
+        <div class="technology-item">
+          <img src="/images/html.svg" alt="HTML" />
+          <p>HTML</p>
+        </div>
+        <div class="technology-item">
+          <img src="/images/css.svg" alt="CSS" />
+          <p>CSS</p>
+        </div>
+        <div class="technology-item">
+          <img src="/images/javascript.svg" alt="JavaScript" />
+          <p>JavaScript</p>
+        </div>
+        <div class="technology-item">
+          <img src="/images/typescript.svg" alt="TypeScript" />
+          <p>TypeScript</p>
+        </div>
+        <div class="technology-item">
+          <img src="/images/java.svg" alt="Java" />
+          <p>Java</p>
+        </div>
+        <div class="technology-item">
+          <img src="/images/spring.svg" alt="Spring" />
+          <p>Spring</p>
+        </div>
+      </div>
     </section>
 
     <section id="contact">
-        <h2>Contacto</h2>
-        <form id="contact-form">
-            <label for="name">Nombre:</label>
-            <input type="text" id="name" name="name" required>
-            
-            <label for="email">Correo Electrónico:</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="message">Mensaje:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-            
-            <button type="submit">Enviar</button>
-        </form>
+      <h2>Contacto</h2>
+      <form id="contact-form">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Mensaje:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
     </section>
 
     <footer>
-        <p>&copy; 2023 Diego Alejandro Garcia Deus. Todos los derechos reservados.</p>
+      <p>
+        &copy; <strong id="year"></strong> Diego Alejandro Garcia Deus. Todos los derechos reservados.
+      </p>
     </footer>
 
-    <!-- Botón de cambio de modo -->
-    <button id="toggle-theme" class="theme-toggle">Cambiar Modo</button>
+    <button id="toggle-theme" class="theme-toggle">
+      <img src="/images/light_mode.svg" alt="" />
+      <img src="/images/dark_mode.svg" alt="" />
+    </button>
 
     <script src="scripts.js"></script>
-</body>
+  </body>
 </html>
