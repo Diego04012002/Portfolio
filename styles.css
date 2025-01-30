@@ -18,11 +18,12 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: 0px 15px;
   background: linear-gradient(135deg, #ff6347, #ffeb3b);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   position: sticky;
   top: 0;
+  height: 90px;
   z-index: 1000;
 }
 
