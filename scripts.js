@@ -19,13 +19,14 @@ const yearElement = document.getElementById("year");
 const menuToggle = document.querySelector(".menu-toggle");
 const navLinks = document.querySelector(".nav-links");
 const navItems = document.querySelectorAll(".nav-links a");
+const themeToggle = document.getElementById("toggle-theme");
 
 yearElement.textContent = year;
 
 // Función para cambiar el tema
 function toggleTheme() {
   const body = document.body;
-  const themeToggle = document.getElementById("toggle-theme");
+  
   const sunIcon = themeToggle.querySelector(".sun-icon");
   const moonIcon = themeToggle.querySelector(".moon-icon");
 
@@ -63,7 +64,7 @@ menuToggle.addEventListener("click", function () {
 });
 
 document.addEventListener("click", function (event) {
-  if (!navLinks.contains(event.target) && !menuToggle.contains(event.target)) {
+  if (!navLinks.contains(event.target) && !menuToggle.contains(event.target) && !themeToggle.contains(event.target)) {
     navLinks.classList.remove("show");
   }
 });
